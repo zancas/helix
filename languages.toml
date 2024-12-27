@@ -146,8 +146,6 @@ command = ["golangci-lint", "run", "--out-format", "json", "--issues-exit-code=1
 
 [language-server.rust-analyzer]
 command = "rust-analyzer"
-cargo = { allFeatures = true, noDefaultFeatures = false }
-
 
 [language-server.rust-analyzer.config]
 inlayHints.bindingModeHints.enable = false
@@ -156,6 +154,7 @@ inlayHints.closureReturnTypeHints.enable = "with_block"
 inlayHints.discriminantHints.enable = "fieldless"
 inlayHints.lifetimeElisionHints.enable = "skip_trivial"
 inlayHints.typeHints.hideClosureInitialization = false
+cargo = { allFeatures = true }
 
 
 [language-server.typescript-language-server]
